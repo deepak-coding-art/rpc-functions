@@ -12,7 +12,7 @@ BEGIN
         RETURN NULL;
     END IF;
 
--- Opean ai compeletion configrations
+-- Openai completion configurations
     completionConfig := jsonb_build_object(
         'model','gpt-3.5-turbo',
         'messages',jsonb_build_array(jsonb_build_object('role','user','content',query)),
